@@ -5,9 +5,15 @@ type Props = { skill: string; skillImg: string };
 const SkillCard = ({ skill, skillImg }: Props) => {
   return (
     <>
-      <div>
-        <Image src={skillImg} alt="Dummy Image" width={50} height={50} />
-        <p>{skill}</p>
+      <div className=" bg-white dark:bg-gray-700 p-3 w-36 rounded-md flex flex-col items-center gap-2">
+        <Image
+          src={skillImg}
+          alt="Dummy Image"
+          width={35}
+          height={35}
+          className="mx-auto"
+        />
+        <p className="font-semibold">{skill}</p>
       </div>
     </>
   );
