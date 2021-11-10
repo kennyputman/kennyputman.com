@@ -13,7 +13,7 @@ const Skills = () => {
   ];
 
   return (
-    <div>
+    <div className="mb-40">
       <h2 className="text-3xl font-semibold mx-auto ">
         Skills
         <span className="w-10 border-b-2 "></span>
