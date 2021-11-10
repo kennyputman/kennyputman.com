@@ -7,6 +7,10 @@ module.exports = {
       colors: {
         "fx-dark-primary": "#2b2a33",
         "fx-dark-second": "#42414d",
+        gray: {
+          "dark-soft": "#9CA3AF",
+          "light-soft": "#374151",
+        },
       },
     },
   },
