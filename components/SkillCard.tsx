@@ -5,7 +5,7 @@ type Props = { skill: string; skillImg: string };
 const SkillCard = ({ skill, skillImg }: Props) => {
   return (
     <>
-      <div className=" bg-white dark:bg-gray-700 p-3 w-36 rounded-md flex flex-col items-center gap-2">
+      <div className=" bg-white dark:bg-fx-dark-second p-3 w-36 rounded-md flex flex-col items-center gap-2 shadow-lg">
         <Image
           src={skillImg}
           alt="Dummy Image"

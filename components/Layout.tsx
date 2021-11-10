@@ -16,9 +16,9 @@ const Layout = ({ children }: Props) => {
     theme === "light" ? setTheme("dark") : setTheme("light");
   };
   return (
-    <div className="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-300 flex flex-col min-h-screen">
+    <div className="bg-gray-100 dark:bg-fx-dark-primary text-gray-900 dark:text-gray-300 flex flex-col min-h-screen">
       <Navbar handleTheme={handleTheme} />
-      <main className="container mx-auto ">{children}</main>
+      <main className="container mx-auto flex-1 ">{children}</main>
       <Footer />
     </div>
   );

@@ -5,10 +5,14 @@ import { Skills } from "../components";
 
 const Home: NextPage = () => {
   return (
-    <div className="p-2">
-      <h1>Hi There!</h1>
-      <p>I&apos;m Kenny. I like building things and solving problems</p>
-      <p>I often work with React, Express, Typescript, and ASP.NET</p>
+    <div className="px-4">
+      <div className="my-3.5 mb-6">
+        <h1 className="text-2xl font-bold mb-4">Hi There!</h1>
+        <p>
+          I&apos;m Kenny. I like building things and solving problems. When
+          I&apos;m not glued to my keyboard you can find me outdoors.
+        </p>
+      </div>
       <Skills />
     </div>
   );

@@ -8,7 +8,7 @@ type Props = {
 const Navbar = ({ handleTheme }: Props) => {
   return (
     <>
-      <header className="h-12 border-solid border-b border-dark:text-gray-300 flex justify-items-center">
+      <header className="h-12 flex justify-items-center sticky top-0 z-50 dark:bg-fx-dark-primary bg-gray-100 shadow-lg">
         <nav className=" h-full flex items-center justify-between pl-4 pr-4  container mx-auto">
           <div className="space-x-4">
             <Link href="/">

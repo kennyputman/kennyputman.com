@@ -14,9 +14,11 @@ const Skills = () => {
 
   return (
     <div>
-      <h2 className="text-xl mx-auto text-center">Skills</h2>
-      <p>Here are the tools I work with the most</p>
-      <div className="flex flex-col items-center">
+      <h2 className="text-2xl font-semibold mx-auto text-center">Skills</h2>
+      <p className="text-center mb-4">
+        Here are the tools I work with the most
+      </p>
+      <div className="flex flex-col items-center mb-7">
         <div className="grid md:grid-cols-4 md:grid-rows-2 gap-4 grid-rows-4 grid-cols-2">
           {skillsData.map((skill) => (
             <SkillCard
