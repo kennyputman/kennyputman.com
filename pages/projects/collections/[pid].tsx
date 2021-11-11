@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import projectData from "../../../data/projectData";
 import collectionsData from "../../../data/collectionsData";
 import { ProjectCard } from "../../../components";
+import ProjectPreview from "../../../components/ProjectPreview";
 
 const Collection = () => {
   const router = useRouter();
@@ -22,7 +23,7 @@ const Collection = () => {
       </h1>
       <div className="mb-32">
         {featuredProjects.map((project) => (
-          <ProjectCard key={project.id} project={project}></ProjectCard>
+          <ProjectPreview key={project.id} project={project}></ProjectPreview>
         ))}
       </div>
     </div>
