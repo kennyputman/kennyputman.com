@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import { FeaturedProjects, Skills } from "../components";
+import ProjectGroup from "../components/ProjectGroup";
 
 const Home: NextPage = () => {
   return (
@@ -19,7 +20,14 @@ const Home: NextPage = () => {
         </div>
       </div>
       <Skills />
-      <FeaturedProjects />
+      <h2 className="text-3xl font-semibold mx-auto ">
+        Projects
+        <span className="w-10 border-b-2 "></span>
+      </h2>
+      <p className=" dark:text-gray-dark-soft text-gray-light-soft">
+        Some things I have been working on
+      </p>
+      <ProjectGroup filter="featured"></ProjectGroup>
     </div>
   );
 };
