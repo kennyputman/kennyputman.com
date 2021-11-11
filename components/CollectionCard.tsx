@@ -4,6 +4,7 @@ import Link from "next/link";
 type Collection = {
   id: number;
   title: string;
+  nextSlug: string;
   description: string;
   imgPath: string;
   websiteUrl: string;
@@ -16,7 +17,7 @@ interface CollectionProps {
 const CollectionCard = ({ collection }: CollectionProps) => {
   return (
     <div className="flex flex-col sm:flex-row max-w-3xl bg-white dark:bg-fx-dark-second rounded-2xl p-3 mb-12">
-      <Link href="/projects/collection/">
+      <Link href={`/projects/collections/${collection.nextSlug}`}>
         <a>
           <div className="h-32 sm:flex-25 p-4 text-center">
             <Image
@@ -27,17 +28,21 @@ const CollectionCard = ({ collection }: CollectionProps) => {
               objectFit="contain"
             ></Image>
           </div>
-          <div className="flex-1">
+        </a>
+      </Link>
+      <div className="flex-1">
+        <Link href={`/projects/collections/${collection.nextSlug}`}>
+          <a>
             <h3 className="text-center text-2xl font-semibold p-2">
               {collection.title}
             </h3>
             <p className="text-center">{collection.description}</p>
-            <div>
-              <a href={collection.websiteUrl}>Website</a>
-            </div>
-          </div>
-        </a>
-      </Link>
+          </a>
+        </Link>
+        <div>
+          <a href={collection.websiteUrl}>Website</a>
+        </div>
+      </div>
     </div>
   );
 };

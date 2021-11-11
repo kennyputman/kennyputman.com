@@ -12,7 +12,7 @@ const ProjectGroup = ({ filter }: Props) => {
   return (
     <div className="mb-32">
       {featuredProjects.map((project) => (
-        <ProjectCard key={project.pid} project={project}></ProjectCard>
+        <ProjectCard key={project.id} project={project}></ProjectCard>
       ))}
     </div>
   );

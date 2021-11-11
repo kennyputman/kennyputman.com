@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 type ProjectTypes = {
-  pid: number;
+  id: number;
   filter: string[];
   title: string;
   description: string;

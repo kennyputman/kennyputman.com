@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import React from "react";
-import { ProjectCollection, ProjectGroup } from "../components/";
+import { ProjectCollection, ProjectGroup } from "../../components/";
 
 const Projects: NextPage = () => {
   return (

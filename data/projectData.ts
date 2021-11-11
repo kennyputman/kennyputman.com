@@ -1,6 +1,5 @@
-const projectData = [
+const projects = [
   {
-    pid: 1,
     filter: ["featured", "frontend-mentor"],
     title: "Product Feedback Page",
     description:
@@ -13,7 +12,6 @@ const projectData = [
       "https://www.frontendmentor.io/challenges/product-feedback-app-wbvUYqjR6",
   },
   {
-    pid: 2,
     filter: ["featured"],
     title: "Full Stack Open",
     description:
@@ -24,5 +22,10 @@ const projectData = [
     websiteUrl: "https://fullstackopen.com/en/",
   },
 ];
+
+const projectData = projects.map((project, index) => ({
+  id: index,
+  ...project,
+}));
 
 export default projectData;
