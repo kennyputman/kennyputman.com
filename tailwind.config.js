@@ -13,6 +13,9 @@ module.exports = {
           "light-soft": "#374151",
         },
       },
+      flex: {
+        25: "0 1 25%",
+      },
     },
   },
   variants: {
