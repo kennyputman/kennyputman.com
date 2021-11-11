@@ -5,7 +5,7 @@ import { FeaturedProjects, Skills } from "../components";
 
 const Home: NextPage = () => {
   return (
-    <div className="px-4 mt-24 sm:mt-32">
+    <div className="px-4 mt-24 sm:mt-32 flex flex-col items-center">
       <div className="my-3.5 mb-40">
         <h2 className="text-xl dark:text-txt-emph mb-4">Hi, my name is</h2>
         <h1 className="text-4xl sm:text-6xl font-bold mb-8">Kenny Putman</h1>

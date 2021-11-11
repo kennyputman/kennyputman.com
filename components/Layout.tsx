@@ -18,7 +18,7 @@ const Layout = ({ children }: Props) => {
   return (
     <div className="bg-gray-100 dark:bg-fx-dark-primary text-gray-800 dark:text-gray-300 sm:text-lg flex flex-col min-h-screen">
       <Navbar handleTheme={handleTheme} />
-      <main className="container mx-auto flex-1 ">{children}</main>
+      <main className="flex-1">{children}</main>
       <Footer />
     </div>
   );

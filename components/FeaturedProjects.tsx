@@ -1,11 +1,29 @@
 import ProjectCard from "./ProjectCard";
 
-const projectData = {
-  title: "Product Feedback Page",
-  description:
-    "Forum for taking in user feedback and prioritizing feature requests",
-  technologies: ["React", "Typescript", "GraphQL"],
-};
+const projectData = [
+  {
+    pid: 1,
+    title: "Product Feedback Page",
+    description:
+      "Product feedback and prioritization forum build with Typescript, Express, GraphQL, and Apollo",
+    technologies: ["React", "Typescript", "GraphQL"],
+    imgPath: "/projects/product-feedback-app.jpg",
+    githubUrl:
+      "https://github.com/kennyputman/full_stack_open_2021/kennyputman/product-feedback-app",
+    websiteUrl:
+      "https://www.frontendmentor.io/challenges/product-feedback-app-wbvUYqjR6",
+  },
+  {
+    pid: 2,
+    title: "Full Stack Open",
+    description:
+      "Completed The University of Helsinki's full stack web development course. Topics covered included: MERN, GraphQL, Typescript, CI/CD, and Docker",
+    technologies: ["MERN", "GraphQL", "Typescipt"],
+    imgPath: "/projects/certificate-fullstack.png",
+    githubUrl: "https://github.com/kennyputman/full_stack_open_2021",
+    websiteUrl: "https://fullstackopen.com/en/",
+  },
+];
 
 const FeaturedProjects = () => {
   return (
@@ -19,11 +37,9 @@ const FeaturedProjects = () => {
           Some things I have been working on
         </p>
       </div>
-      <ProjectCard
-        title={projectData.title}
-        description={projectData.description}
-        technologies={projectData.technologies}
-      ></ProjectCard>
+      {projectData.map((project) => (
+        <ProjectCard key={project.pid} project={project}></ProjectCard>
+      ))}
     </div>
   );
 };
