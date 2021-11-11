@@ -2,6 +2,7 @@ import Image from "next/image";
 
 type ProjectTypes = {
   pid: number;
+  filter: string[];
   title: string;
   description: string;
   technologies: string[];
@@ -15,7 +16,6 @@ interface ProjectProps {
 }
 
 const ProjectCard = ({ project }: ProjectProps) => {
-  console.log(project);
   return (
     <div className="flex sm:flex-row flex-col p-4 max-w-4xl mb-12">
       {/* Project GIF */}
