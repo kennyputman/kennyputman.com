@@ -18,10 +18,10 @@ const Collection = () => {
 
   return (
     <div className="pt-5">
-      <h1 className="mb-5 text-3xl text-center font-bold">
+      <h1 className="mb-16 text-3xl text-center font-bold">
         {collection?.title}
       </h1>
-      <div className="mb-32">
+      <div className="mb-32 flex flex-col items-center">
         {featuredProjects.map((project) => (
           <ProjectPreview key={project.id} project={project}></ProjectPreview>
         ))}
