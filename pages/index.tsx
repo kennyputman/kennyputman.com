@@ -29,7 +29,7 @@ const Home: NextPage = () => {
       <div className="mb-12">
         <Link href="/projects">
           <a>
-            <button className=" border border-gray-900 dark:border-gray-100 hover:border-txt-emph rounded-xl px-4 py-2 font-semibold text-gray-900 dark:text-gray-100 dark:bg-fx-dark-second hover:text-txt-emph dark:hover:text-txt-emph dark:hover:border-txt-emph">
+            <button className=" border border-gray-900 dark:border-fx-dark-second hover:border-txt-emph rounded-xl px-4 py-2 font-semibold text-gray-900 dark:text-gray-100 dark:bg-fx-dark-second hover:text-txt-emph dark:hover:text-txt-emph dark:hover:border-txt-emph">
               See All Projects
             </button>
           </a>

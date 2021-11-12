@@ -11,7 +11,7 @@ const Projects: NextPage = () => {
 
   return (
     <div className="p-2">
-      <h1 className="text-6xl font-bold mb-24 text-center">Projects</h1>
+      <h1 className="text-6xl font-bold mt-12 mb-16 text-center">Projects</h1>
       <div className="pt-5 flex flex-col items-center">
         <h2 className="text-3xl font-bold mb-12 text-center">Featured</h2>
         <ProjectGroup filter="featured"></ProjectGroup>
@@ -25,8 +25,7 @@ const Projects: NextPage = () => {
       <div className="pt-5 flex flex-col items-center">
         <h2 className="text-3xl font-bold mb-2 text-center">Shorts</h2>
         <p className="dark:text-gray-dark-soft  mb-10 text-center">
-          Small projects, components, or games used to practice fundamental
-          HTML/CSS and Javascript skills
+          Small projects, components, or games used to practice frontend skills
         </p>
         <div className="mb-32 p-2 gap-8 grid grid-col-1 md:grid-cols-2 xl:grid-cols-3">
           {shorts.map((project) => (
