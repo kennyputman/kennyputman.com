@@ -39,9 +39,6 @@ const CollectionCard = ({ collection }: CollectionProps) => {
             <p className="text-center">{collection.description}</p>
           </a>
         </Link>
-        <div>
-          <a href={collection.websiteUrl}>Website</a>
-        </div>
       </div>
     </div>
   );

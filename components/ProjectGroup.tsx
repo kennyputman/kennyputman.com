@@ -10,7 +10,7 @@ const ProjectGroup = ({ filter }: Props) => {
     project.filter?.includes(filter)
   );
   return (
-    <div className="mb-32">
+    <div className="mb-8">
       {featuredProjects.map((project) => (
         <ProjectCard key={project.id} project={project}></ProjectCard>
       ))}

@@ -17,11 +17,11 @@ const Collection = () => {
   );
 
   return (
-    <div className="pt-5">
+    <div className="pt-5 flex flex-col items-center">
       <h1 className="mb-16 text-3xl text-center font-bold">
         {collection?.title}
       </h1>
-      <div className="mb-32 flex flex-col items-center">
+      <div className="mb-32 p-2 gap-8 grid grid-col-1 md:grid-cols-2 xl:grid-cols-3">
         {featuredProjects.map((project) => (
           <ProjectPreview key={project.id} project={project}></ProjectPreview>
         ))}

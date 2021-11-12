@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <footer className="h-10 dark:border-t">
+      <footer className=" h-16 dark:border-t flex items-center justify-center">
         <Link href="https://github.com/kennyputman">
           <a>Github</a>
         </Link>

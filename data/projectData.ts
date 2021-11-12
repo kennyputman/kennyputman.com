@@ -48,6 +48,15 @@ const projects = [
     githubUrl: "https://github.com/kennyputman/odin-landing-page",
     websiteUrl: "https://kennyputman.github.io/odin-landing-page/",
   },
+  {
+    filter: ["short", "the-odin-project"],
+    title: "Tic Tac Toe",
+    description: "Classic game of Tic Tac Toe using the Module Pattern",
+    technologies: ["HTML", "CSS", "JS"],
+    imgPath: "/projects/top-tic-tac-toe.png",
+    githubUrl: "https://github.com/kennyputman/tic-tac-toe-js",
+    websiteUrl: "https://kennyputman.github.io/tic-tac-toe-js/",
+  },
 ];
 
 const projectData = projects.map((project, index) => ({

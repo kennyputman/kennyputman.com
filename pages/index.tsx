@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
+import Link from "next/link";
 import { ProjectGroup, Skills } from "../components";
 
 const Home: NextPage = () => {
@@ -27,6 +26,15 @@ const Home: NextPage = () => {
         Some things I have been working on
       </p>
       <ProjectGroup filter="featured"></ProjectGroup>
+      <div className="mb-12">
+        <Link href="/projects">
+          <a>
+            <button className=" border border-gray-900 dark:border-fx-dark-second hover:border-txt-emph rounded-xl px-4 py-2 font-semibold text-gray-900 dark:text-gray-100 dark:bg-fx-dark-second hover:text-txt-emph dark:hover:text-txt-emph dark:hover:border-txt-emph">
+              See All Projects
+            </button>
+          </a>
+        </Link>
+      </div>
     </div>
   );
 };
