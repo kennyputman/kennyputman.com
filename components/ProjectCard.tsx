@@ -1,19 +1,5 @@
 import Image from "next/image";
-
-type ProjectTypes = {
-  id: number;
-  filter: string[];
-  title: string;
-  description: string;
-  technologies: string[];
-  imgPath: string;
-  githubUrl: string;
-  websiteUrl: string;
-};
-
-interface ProjectProps {
-  project: ProjectTypes;
-}
+import { ProjectProps } from "./types/propTypes";
 
 const ProjectCard = ({ project }: ProjectProps) => {
   return (
