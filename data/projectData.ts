@@ -53,7 +53,7 @@ const projects = [
     title: "Tic Tac Toe",
     description: "Classic game of Tic Tac Toe using the Module Pattern",
     technologies: ["HTML", "CSS", "JS"],
-    imgPath: "/projects/tic-tac-toe.png",
+    imgPath: "/projects/top-tic-tac-toe.png",
     githubUrl: "https://github.com/kennyputman/tic-tac-toe-js",
     websiteUrl: "https://kennyputman.github.io/tic-tac-toe-js/",
   },
