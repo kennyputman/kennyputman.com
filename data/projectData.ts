@@ -1,14 +1,13 @@
 const projects = [
   {
     filter: ["featured", "frontend-mentor"],
-    title: "Product Feedback Page",
+    title: "Crowdfunding Product App",
     description:
-      "Product feedback and prioritization forum build with Typescript, Express, GraphQL, and Apollo",
-    technologies: ["React", "Typescript", "GraphQL"],
-    imgPath: "/projects/product-feedback-app.jpg",
-    githubUrl: "https://github.com/kennyputman/product-feedback-app",
-    websiteUrl:
-      "https://www.frontendmentor.io/challenges/product-feedback-app-wbvUYqjR6",
+      "Fictional Crowdfunding Product App built with React, Typescript, and Tailwindcss",
+    technologies: ["React", "Typescript", "Tailwindcss"],
+    imgPath: "/projects/crowdfunding-product-app.png",
+    githubUrl: "https://github.com/kennyputman/crowdfunding-product-page",
+    websiteUrl: "https://crowdfunding-product-app-kennyputman.netlify.app/",
   },
   {
     filter: ["featured"],
@@ -22,12 +21,12 @@ const projects = [
   },
   {
     filter: ["short", "frontend-mentor"],
-    title: "Oder Summary Component",
-    description: "Order summary component built with pure html/css",
+    title: "Meet Landing Page",
+    description: "Landing Page for a fictional Chat app built with html/css",
     technologies: ["CSS"],
-    imgPath: "/projects/order-summary-component.png",
-    githubUrl: "https://github.com/kennyputman/order-summary-component",
-    websiteUrl: "https://kennyputman.github.io/order-summary-component/",
+    imgPath: "/projects/meet-landing-page.png",
+    githubUrl: "https://github.com/kennyputman/meet-landing-page",
+    websiteUrl: "https://kennyputman.github.io/meet-landing-page/",
   },
   {
     filter: ["short", "the-odin-project"],
@@ -49,13 +48,22 @@ const projects = [
     websiteUrl: "https://kennyputman.github.io/odin-landing-page/",
   },
   {
-    filter: ["short", "the-odin-project"],
-    title: "Tic Tac Toe",
-    description: "Classic game of Tic Tac Toe using the Module Pattern",
-    technologies: ["HTML", "CSS", "JS"],
-    imgPath: "/projects/top-tic-tac-toe.png",
-    githubUrl: "https://github.com/kennyputman/tic-tac-toe-js",
-    websiteUrl: "https://kennyputman.github.io/tic-tac-toe-js/",
+    filter: ["short", "frontend-mentor"],
+    title: "Accordion Card",
+    description: "Accordion dropdown menu using html, css, and JS",
+    technologies: ["CSS", "JS"],
+    imgPath: "/projects/accordion-card.png",
+    githubUrl: "https://github.com/kennyputman/faq-accordion-card",
+    websiteUrl: "https://kennyputman.github.io/faq-accordion-card/",
+  },
+  {
+    filter: ["short", "frontend-mentor"],
+    title: "Oder Summary Component",
+    description: "Order summary component built with pure html/css",
+    technologies: ["CSS"],
+    imgPath: "/projects/order-summary-component.png",
+    githubUrl: "https://github.com/kennyputman/order-summary-component",
+    websiteUrl: "https://kennyputman.github.io/order-summary-component/",
   },
 ];
 

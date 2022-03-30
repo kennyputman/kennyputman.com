@@ -6,12 +6,13 @@ const ProjectCard = ({ project }: ProjectProps) => {
     <div className="flex sm:flex-row flex-col p-4 max-w-4xl mb-12">
       {/* Project GIF */}
       <div className="flex-1 text-center">
-        <a href={project.websiteUrl}>
+        <a href={project.websiteUrl} className="relative w-">
           <Image
             src={project.imgPath}
             alt=""
             height={300}
             width={400}
+            objectFit="cover"
             className="rounded-xl"
           />
         </a>
