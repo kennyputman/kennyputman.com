@@ -17,6 +17,9 @@ const Layout = ({ children }: Props) => {
   };
   return (
     <div className="bg-gray-100 dark:bg-fx-dark-primary text-gray-800 dark:text-gray-300 sm:text-lg flex flex-col min-h-screen">
+      <Head>
+        <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+      </Head>
       <Navbar handleTheme={handleTheme} />
       <main className="flex-1">{children}</main>
       <Footer />
